@@ -1,10 +1,13 @@
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1>In the name of Allah</h1>
+    <div className='bg-slate-200 h-screen'>
+      <Navbar />
+    </div>
     </>
   )
 }
