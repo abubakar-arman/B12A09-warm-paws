@@ -2,6 +2,7 @@ import { useLoaderData } from 'react-router';
 import Hero from '../components/Hero'
 import Services from '../components/Services';
 import Tips from '../components/Tips';
+import Experts from '../components/Experts';
 const Home = () => {
     const data = useLoaderData()
     console.log(data);
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero />
             <Services />
             <Tips />
+            <Experts />
         </div>
     );
 };

@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Eleanor Vance, DVM, DACVS",
+      "title": "Chief of Small Animal Surgery",
+      "specialty": "Board-Certified Veterinary Surgeon (Soft Tissue & Orthopedics)",
+      "bio_summary": "With over 15 years of experience, Dr. Vance specializes in complex surgical procedures, including minimally invasive techniques. She leads our surgical residency program and is passionate about post-operative pain management.",
+      "image_url": "https://i.pravatar.cc/150?img=68",
+      "focus_areas": ["Advanced Orthopedics", "Oncologic Surgery", "Reconstructive Surgery"]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Marcus Chen, DVM",
+      "title": "Lead General Practitioner & Wellness Director",
+      "specialty": "Preventive Care, Geriatric Medicine, and Nutrition",
+      "bio_summary": "Dr. Chen is dedicated to lifetime wellness and preventative medicine. He excels at creating personalized nutrition plans and managing chronic conditions in senior pets, ensuring quality of life.",
+      "image_url": "https://i.pravatar.cc/150?img=64",
+      "focus_areas": ["Routine Wellness Exams", "Senior Pet Care", "Weight Management & Diet Planning"]
+    },
+    {
+      "id": 3,
+      "name": "Dr. David Morales, DVM, DACVECC",
+      "title": "Director of Emergency & Critical Care",
+      "specialty": "Board-Certified Emergency and Critical Care Specialist",
+      "bio_summary": "A calm and decisive force in emergencies, Dr. Morales manages all critical cases, from trauma and poisoning to intensive post-operative monitoring. She is available 24/7 through our E.R. unit.",
+      "image_url": "https://i.pravatar.cc/150?img=12",
+      "focus_areas": ["Stabilization & Trauma", "Toxicology & Poisoning", "ICU Patient Management"]
+    }
+]
