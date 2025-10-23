@@ -25,7 +25,6 @@ const Hero = () => {
       <SwiperSlide><img src={pet2} alt="" className='object-cover w-full h-full' /></SwiperSlide>
       <SwiperSlide><img src={pet3} alt="" className='object-cover w-full h-full' /></SwiperSlide>
       <SwiperSlide><img src={pet4} alt="" className='object-cover w-full h-full' /></SwiperSlide>
-      ...
     </Swiper>
   );
 };

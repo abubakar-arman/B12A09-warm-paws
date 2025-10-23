@@ -44,3 +44,8 @@
   --depth: 1;
   --noise: 0;
 }
+
+a.active {
+    color: var(--color-primary);
+    border-bottom: 4px solid;
+}
