@@ -1,0 +1,80 @@
+[
+    {
+      "section_id": "shelter-safety",
+      "title": "🏠 Home & Shelter Safety",
+      "tips": [
+        {
+          "card_title": "Warm Zone",
+          "icon": "🏠",
+          "content": "Keep beds away from cold windows and drafts. **Insulation is key.**"
+        },
+        {
+          "card_title": "Antifreeze Alert",
+          "icon": "⚠️",
+          "content": "Antifreeze is deadly. Clean up all spills immediately and use **pet-safe products**."
+        },
+        {
+          "card_title": "Heater Safety",
+          "icon": "🔥",
+          "content": "Supervise pets near fireplaces and space heaters to prevent **burns and fires**."
+        },
+        {
+          "card_title": "Outdoor Pets",
+          "icon": "❄️",
+          "content": "Provide an **elevated, straw-filled shelter** to keep them dry and warm."
+        }
+      ]
+    },
+    {
+      "section_id": "outdoors-paws",
+      "title": "🚶 Outdoors & Paw Protection",
+      "tips": [
+        {
+          "card_title": "Short Walks",
+          "icon": "⏱️",
+          "content": "Limit time outside. **Shorten walks** during extreme cold to prevent hypothermia."
+        },
+        {
+          "card_title": "Paw Protection",
+          "icon": "🐾",
+          "content": "Salt and ice burn! Apply **balm or use boots**. Wipe paws thoroughly after every walk."
+        },
+        {
+          "card_title": "Check the Hood",
+          "icon": "🚗",
+          "content": "Before starting the car, **knock on the hood** to scare away sheltering cats."
+        },
+        {
+          "card_title": "Leash Up",
+          "icon": "🔗",
+          "content": "Keep pets leashed. Snow and ice can disrupt scents, leading to a **higher risk of getting lost**."
+        }
+      ]
+    },
+    {
+      "section_id": "health-nutrition",
+      "title": "🍲 Health & Nutrition",
+      "tips": [
+        {
+          "card_title": "Fresh Water",
+          "icon": "💧",
+          "content": "Check water bowls frequently to prevent freezing. **Hydration is crucial** in winter."
+        },
+        {
+          "card_title": "Diet Adjustment",
+          "icon": "🦴",
+          "content": "Outdoor pets may need more calories. **Consult your vet** for indoor pet diet changes."
+        },
+        {
+          "card_title": "Frostbite Watch",
+          "icon": "🩺",
+          "content": "Watch for shivering or lethargy (hypothermia). Look for pale skin on **ears and paws**."
+        },
+        {
+          "card_title": "Grooming Tip",
+          "icon": "🧥",
+          "content": "Don't over-trim thick coats; their fur provides **natural insulation** from the cold."
+        }
+      ]
+    }
+  ]

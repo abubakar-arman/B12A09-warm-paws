@@ -8,8 +8,8 @@ const Services = () => {
     return (
         <div className='flex flex-col items-center mt-10'>
             <h3 className='text-3xl font-bold text-primary'>Popular Winter Care Services</h3>
-            <div className="cards grid grid-cols-3 gap-4 mt-5">
-                {services.map(service => <ServiceCard service={service} />)}
+            <div className="cards grid lg:grid-cols-3 gap-4 mt-5">
+                {services.map((service, i) => <ServiceCard key={i} service={service} />)}
             </div>
         </div>
     );

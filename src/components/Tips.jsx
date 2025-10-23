@@ -1,0 +1,28 @@
+import React, { useEffect, useState } from 'react';
+import TipsSection from './TipsSection';
+
+const Tips = () => { 
+    const [tipsData, setTipsData] = useState([])
+    
+
+    useEffect(() => {
+        fetch('/winter-care-tips.json')
+        .then((data) => data.json())
+        .then((json) => setTipsData(json))
+    }, [])
+
+    // useEffect(()=> console.log(tipsData)
+    // , [tipsData])
+    
+    return (
+        <div className='flex flex-col items-center mt-10'>
+            <h3 className='text-3xl font-bold text-primary'>Winter Care Tips for Pets</h3>
+            <div className="cards grid lg:grid-cols-3 gap-4 mt-5">
+                {tipsData.map((tipsSection, i) => <TipsSection tipsSection={tipsSection} key={i} />)}
+            </div>
+        </div>
+        
+    );
+};
+
+export default Tips;
