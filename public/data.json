@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.postimg.cc/1tZbZtG3/winter-coat-fitting.png",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo to protect against dryness.",
+    "image": "https://i.postimg.cc/mrV5yGJ4/winter-grooming.png",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Kennel Boarding",
+    "providerName": "FrostyTails Lodge",
+    "providerEmail": "contact@frostytails.com",
+    "price": 45,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Overnight or weekend boarding in warm, insulated kennels with personalized pet care.",
+    "image": "https://i.postimg.cc/vTHM6nHt/heated-kennel.png",
+    "category": "Boarding"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Wellness Check-Up",
+    "providerName": "HealthyPaws Clinic",
+    "providerEmail": "support@healthypaws.com",
+    "price": 50,
+    "rating": 5.0,
+    "slotsAvailable": 5,
+    "description": "Seasonal vet examination focusing on joint health, coat condition, and immune support.",
+    "image": "https://i.postimg.cc/SN7wCqHf/wellness-check.png",
+    "category": "Veterinary"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Snow Walk Adventure & Safety Training",
+    "providerName": "ArcticPaws Adventures",
+    "providerEmail": "info@arcticpaws.com",
+    "price": 40,
+    "rating": 4.9,
+    "slotsAvailable": 8,
+    "description": "Guided outdoor sessions that teach pets snow safety, leash discipline, and cold endurance.",
+    "image": "https://i.postimg.cc/2yK9Lx2W/snow-walk.png",
+    "category": "Training"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Nutrition Consultation",
+    "providerName": "PetFuel Nutritionists",
+    "providerEmail": "team@petfuel.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 7,
+    "description": "Personalized winter diet planning to keep your pet's energy up and coat healthy during the cold months.",
+    "image": "https://i.postimg.cc/V6FfnCPS/nutrition-consult.png",
+    "category": "Nutrition"
+  }
+]
