@@ -12,7 +12,7 @@ const ServiceCard = ({service}) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title text-xl">{service.serviceName}</h2>
-                <div className="flex justify-between font-bold text-lg">
+                <div className="flex justify-between font-bold text-lg flex-1">
                     <span className="flex gap-1 items-center"><FaStar /> {service.rating}</span>
                     <span className="flex gap-1 items-center"><FaDollarSign /> {service.price} </span>
                 </div>
