@@ -10,7 +10,7 @@ const Login = () => {
                         <h3 className='text-3xl text-center font-bold pt-8'>Log into your account</h3>
                             <div class="card-body">
                                 <form>
-                                    <fieldset class="fieldset">
+                                    <fieldset class="fieldset w-xs mx-auto">
                                         <label class="label">Email</label>
                                         <input type="email" class="input" placeholder="Email" />
                                         <label class="label">Password</label>
