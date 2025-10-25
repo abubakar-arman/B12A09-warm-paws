@@ -5,10 +5,7 @@ import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 
-import pet1 from '../assets/slider/pet1.jpg'
-import pet2 from '../assets/slider/pet2.jpg'
-import pet3 from '../assets/slider/pet3.jpg'
-import pet4 from '../assets/slider/pet4.jpg'
+const sliderImages = ['/slider/pet1.jpg', '/slider/pet2.jpg', '/slider/pet3.jpg', '/slider/pet4.jpg']
 
 const Hero = () => {
   return (
@@ -20,10 +17,11 @@ const Hero = () => {
       loop={true}
       className='lg:h-[600px]'
     >
-      <SwiperSlide><img src={pet1} alt="" className='object-cover w-full h-full' /></SwiperSlide>
-      <SwiperSlide><img src={pet2} alt="" className='object-cover w-full h-full' /></SwiperSlide>
-      <SwiperSlide><img src={pet3} alt="" className='object-cover w-full h-full' /></SwiperSlide>
-      <SwiperSlide><img src={pet4} alt="" className='object-cover w-full h-full' /></SwiperSlide>
+      {sliderImages.map((img, i) => (
+        <SwiperSlide key={i}>
+          <img src={img} alt="" className='object-cover w-full h-full' />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

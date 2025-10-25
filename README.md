@@ -1,8 +1,9 @@
-> ### "اعوذ بالله من الشیطان الرجیم"
-> ### "I seek refuge in Allah from the accursed Satan"
-> ### "بسم الله الرحمن الرحيم"
-> ### "I begin with the name of Allah, the Most Gracious, the Most Merciful."
-> ### "إياك نعبد و إياك نستعين"
-> ### "It is You (Allah) we worship and You we ask for help."
-> \- [**Al Qur'an : Chapter 1, Verse 5**](https://quran.com/1)
-<br>
+# Project Name : Warm Paws
+# Purpose
+A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season. Users can explore local pet care services, winter pet clothing, grooming options, and expert tips — all in one friendly interface.
+# Packages Used
+- React-Spring
+- react-hot-toast
+- swiper
+
+
