@@ -20,7 +20,7 @@ const ServiceDetails = () => {
                 <div className="hero-content flex flex-col lg:flex-row">
                     <img
                         src={service.image}
-                        className="lg:max-w-lg max-w-md rounded-lg shadow-2xl"
+                        className="lg:max-w-lg  rounded-lg shadow-2xl"
                     />
                     <div className="flex flex-col gap-3 mt-5 ml-5">
                         <h3 className="text-4xl font-bold">{service.serviceName}</h3>
