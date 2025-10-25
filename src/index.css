@@ -49,4 +49,11 @@
   a.active {
     @apply lg:border-b-4 text-primary
   }
+  input.beautify {
+    @apply placeholder:text-gray-400 placeholder:italic placeholder:text-sm 
+    focus:placeholder:opacity-50 transition-all placeholder:font-light
+  }
+  .link {
+    @apply text-blue-800
+  }
 }

@@ -1,9 +1,15 @@
 import { MdEmail } from 'react-icons/md';
 import { useAuth } from '../contexts/AuthContext';
+import { useNavigate } from 'react-router';
 
 const Profile = () => {
     const {user} = useAuth()
     const {displayName, email, photoURL} = user
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate('/update-profile')
+    }
     return (
         <div className="card w-fit min-w-sm bg-base-100 shadow-sm mx-auto my-10 h-150 lg:h-140">
             <div className="card-body">
@@ -16,7 +22,7 @@ const Profile = () => {
                     </div>
                     <h2 className="text-5xl mt-5 font-bold text-center text-neutral">{displayName}</h2>
                     <p className="font-extralight text-lg mt-5 flex gap-2 items-center"><MdEmail /> {email}</p>
-                    <button className='btn btn-primary mt-10 '>Update Profile</button>
+                    <button onClick={handleClick} className='btn btn-primary mt-10 '>Update Profile</button>
                 </div>
             </div>
         </div>

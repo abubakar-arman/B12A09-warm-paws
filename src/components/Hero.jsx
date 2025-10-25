@@ -5,10 +5,10 @@ import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 
-import pet1 from '../assets/pet1.jpg'
-import pet2 from '../assets/pet2.jpg'
-import pet3 from '../assets/pet3.jpg'
-import pet4 from '../assets/pet4.jpg'
+import pet1 from '../assets/slider/pet1.jpg'
+import pet2 from '../assets/slider/pet2.jpg'
+import pet3 from '../assets/slider/pet3.jpg'
+import pet4 from '../assets/slider/pet4.jpg'
 
 const Hero = () => {
   return (

@@ -18,9 +18,9 @@ const Navbar = () => {
                 <NavLink to='/signup'>Signup</NavLink>
             </li>
         </>}
-            {isAuthenticated && <li key={4}>
-                <NavLink to='/profile'>My Profile</NavLink>
-            </li>}
+        {isAuthenticated && <li key={4}>
+            <NavLink to='/profile'>My Profile</NavLink>
+        </li>}
     </>
 
     const handleLogout = () => {
@@ -41,26 +41,29 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to='/' className="flex items-center justify-center py-0 text-3xl text-amber-800/80"><img className='w-20' src={logo} alt="" />Warm Paws</Link>
+                <Link to='/' className="flex items-center justify-center py-0 text-lg font-bold lg:text-3xl text-amber-800/80"><img className='w-20' src={logo} alt="" />Warm Paws</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-5 font-semibold ">
                     {navLinks}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end space-x-4">
                 {isAuthenticated && <>
-                <ul className="menu menu-horizontal px-1 gap-5 font-semibold ">
-                    <li><button onClick={handleLogout} className='btn btn-ghost'>Logout</button></li>
-                </ul>
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                    <div className="w-10 rounded-full">
-                        <img
-                            alt="Tailwind CSS Navbar component"
-                            src={user.photoURL} />
+                        <button onClick={handleLogout} className='btn btn-ghost bg-primary text-white'>Logout</button>
+                    <div className="tooltip tooltip-left">
+                        <div className="tooltip-content h-10 bg-blue-500">
+                            <div className="animate-bounce text-white text-xl font-black">{user.displayName}</div>
+                        </div>
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                            <img
+                                alt="Tailwind CSS Navbar component"
+                                src={user.photoURL} />
+                        </div>
                     </div>
-                </div>
-                </> }
+                    </div>
+                </>}
             </div>
         </div>
     );

@@ -3,8 +3,8 @@ import logo from '../assets/logo.png'
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal bg-primary text-primary-content p-10 justify-between items-center">
-            <aside>
+        <footer className="footer  flex flex-col lg:flex-row bg-primary text-primary-content p-10 justify-between items-center">
+            <aside className='flex flex-col items-center justify-center text-center'>
                 <img src={logo} className='w-30' alt="" />
                 <p>
                     <span className='text-2xl text-white font-bold'>Warm Paws</span>
