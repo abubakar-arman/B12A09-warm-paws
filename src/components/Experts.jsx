@@ -10,7 +10,7 @@ const Experts = () => {
         .then(data => setExperts(data))
     })
     return (
-        <div className='flex flex-col items-center mt-10 mb-10'>
+        <div className='flex flex-col items-center mt-10 mb-10' data-aos='slide-up' >
             <h3 className='text-3xl font-bold text-primary'>Meet Our Expert Vets</h3>
             <div className="cards grid lg:grid-cols-3 gap-4 mt-5">
                 {experts.map((expert, i) => <ExpertCard key={i} expert={expert} />)}
