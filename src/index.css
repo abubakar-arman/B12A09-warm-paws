@@ -45,7 +45,8 @@
   --noise: 0;
 }
 
-a.active {
-    color: var(--color-primary);
-    border-bottom: 4px solid;
+@layer components {
+  a.active {
+    @apply lg:border-b-4 text-primary
+  }
 }

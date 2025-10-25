@@ -5,6 +5,7 @@ import ServiceDetails from "../pages/ServiceDetails";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Profile from "../pages/Profile";
+import ProtectedRoute from "./ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,10 @@ const router = createBrowserRouter([
       },
       {
         path: '/service/:id',
-        Component: ServiceDetails,
+        element:
+          <ProtectedRoute>
+            <ServiceDetails />
+          </ProtectedRoute>,
         loader: () => fetch('/data.json')
       },
       {
@@ -31,7 +35,10 @@ const router = createBrowserRouter([
       },
       {
         path: '/profile',
-        Component: Profile
+        element:
+        <ProtectedRoute>
+          <Profile />
+        </ProtectedRoute>
       },
       {
         path: '/*',

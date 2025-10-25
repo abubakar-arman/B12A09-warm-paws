@@ -6,8 +6,6 @@ const ServiceDetails = () => {
     const { id } = useParams()
 
     const service = data.find((service) => service.serviceId === Number(id))
-    console.log(service);
-
 
     return (
         <div>

@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import toast from 'react-hot-toast';
 
 const Login = () => {
     const { login, user } = useAuth()
     const navigate = useNavigate()
+    const location = useLocation()
+
+    const from = location.state?.from || '/'
 
     useEffect(() => {
         console.log('user', user);
@@ -13,21 +16,21 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        // console.log(location);
         // console.log(e.target);
 
         const email = e.target.email.value
         const password = e.target.password.value
         try {
             await login(email, password)
-            navigate('/')
-        } catch(err) {
+            navigate(from)
+        } catch (err) {
             console.log(err.message);
             toast.error('Invalid Username or Password')
-            
+
         }
     }
 
-    // signInWithEmailAndPassword(auth, email)
     return (
         <div>
             <div className="lg:hero bg-base-200 lg:min-h-screen">

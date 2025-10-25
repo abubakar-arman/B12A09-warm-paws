@@ -1,5 +1,6 @@
 import { FaDollarSign, FaStar } from "react-icons/fa6";
 import { IoMdPricetags } from "react-icons/io";
+import { Link } from "react-router";
 
 const ServiceCard = ({service}) => {
     return (
@@ -17,7 +18,7 @@ const ServiceCard = ({service}) => {
                     <span className="flex gap-1 items-center"><FaDollarSign /> {service.price} </span>
                 </div>
                 <div className="card-actions justify-end mt-2">
-                    <button className="btn btn-primary">View Details</button>
+                    <Link to={'/service/' + service.serviceId} className="btn btn-primary">View Details</Link>
                 </div>
             </div>
         </div>
