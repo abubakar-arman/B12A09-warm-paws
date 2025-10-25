@@ -1,13 +1,33 @@
+import { NavLink, useNavigate } from 'react-router';
 import logo from '../assets/logo.png'
+import { useAuth } from '../contexts/AuthContext';
 
 const Navbar = () => {
+    const { logout, isAuthenticated } = useAuth()
+    const navigate = useNavigate()
+
     const navLinks = <>
-        <li><a href="" className='active'>Home</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="">Register</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">My Profile</a></li>
+        <li key={1}>
+            <NavLink to='/' >Home</NavLink>
+        </li>
+        {!isAuthenticated && <>
+            <li key={2}>
+                <NavLink to='/login'>Login</NavLink>
+            </li>
+            <li key={3}>
+                <NavLink to='/signup'>Signup</NavLink>
+            </li>
+        </>}
+            {isAuthenticated && <li key={4}>
+                <NavLink to='/profile'>My Profile</NavLink>
+            </li>}
     </>
+
+    const handleLogout = () => {
+        logout();
+        navigate('/')
+    }
+
     return (
         <div className="navbar bg-base-100 shadow-sm lg:px-5">
             <div className="navbar-start">
@@ -29,9 +49,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <ul className="menu menu-horizontal px-1 gap-5 font-semibold ">
-                    <li><a className='btn btn-ghost' href="">Logout</a></li>
-                </ul>
+                {isAuthenticated && <ul className="menu menu-horizontal px-1 gap-5 font-semibold ">
+                    <li><button onClick={handleLogout} className='btn btn-ghost'>Logout</button></li>
+                </ul>}
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
                         <img

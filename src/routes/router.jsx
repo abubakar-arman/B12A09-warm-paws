@@ -10,50 +10,34 @@ const router = createBrowserRouter([
     path: '/',
     Component: Root,
     children: [
-        {
-            index: true, 
-            Component: Home,
-            loader: () => fetch('/data.json')
-        },
-        {
-            path: '/service/:id',
-            Component: ServiceDetails,
-            loader: () => fetch('/data.json')
-        },
-        {
-            path: '/login',
-            Component: Login
-        },
-        {
-          path: '/signup',
-          Component: Signup
-        }
+      {
+        index: true,
+        Component: Home,
+        loader: () => fetch('/data.json')
+      },
+      {
+        path: '/service/:id',
+        Component: ServiceDetails,
+        loader: () => fetch('/data.json')
+      },
+      {
+        path: '/login',
+        Component: Login
+      },
+      {
+        path: '/signup',
+        Component: Signup
+      },
+      {
+        path: '/profile',
+        element: <div>Profile</div>
+      },
+      {
+        path: '/*',
+        element: <div>Error 404</div>
+      }
     ]
   },
-  {
-    path: '/services/:id',
-    element: <div>Service Details</div>
-  },
-  {
-    path: '/book-service/:id',
-    element: <div>Book Service</div>
-  },
-  {
-    path: '/profile',
-    element: <div>Profile</div>
-  },
-  {
-    path: '/login',
-    element: <div>Login</div>
-  },
-  {
-    path: '/register',
-    element: <div>Register</div>
-  },
-  {
-    path: '/*',
-    element: <div>Error 404</div>
-  }
 ])
 
 export default router

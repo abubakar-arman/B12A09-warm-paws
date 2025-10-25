@@ -16,7 +16,6 @@ const Hero = () => {
       modules={[Autoplay]}
       spaceBetween={30}
       slidesPerView={1}
-      onSwiper={(swiper) => console.log(swiper)}
       autoplay={{delay: 3000}}
       loop={true}
       className='lg:h-[600px]'

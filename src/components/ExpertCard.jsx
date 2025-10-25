@@ -18,7 +18,7 @@ const ExpertCard = ({ expert }) => {
                 <p className=""><span className="badge badge-neutral">Biography</span><br /> {bio_summary}</p>
                 <span className="badge badge-neutral">Focus Area</span>
                 <ul className="list-disc pl-5">
-                    {focus_areas.map((area) => <li>{area}</li>)}
+                    {focus_areas.map((area, i) => <li key={i}>{area}</li>)}
                 </ul>
             </div>
         </div>
